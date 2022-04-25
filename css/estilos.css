@@ -1,0 +1,204 @@
+
+body {
+    
+    background-color: #414141;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+h1 {
+    align-items: center;
+    text-shadow: 2px 3px 3px rgb(3, 3, 9);
+    padding-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+   
+}
+h2 {
+    text-align: center;
+    text-shadow: 2px 3px 3px rgb(3, 3, 9);
+}
+
+nav {
+    margin-top: 0px;
+}
+
+/* Portada */
+.portada {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: -73px;
+    text-align: center;
+}
+/* Mi foto */
+.x {
+    margin-top: 250px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 60%);
+    filter: grayscale(55%);
+}
+
+/* Barra de incio ondulada */
+
+.barra {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer */
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    background-color: #414141;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content {
+    text-align: center;
+}
+
+/* Logos del footer */
+
+ol{
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+ol li{ 
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ol li:hover{
+    z-index: 10000;
+    transform: scale(0.75);
+}
+ol li::before{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px var(--bg),
+    0 0 0 22px var(--clr);
+    transition: 0.3s;
+}  
+
+ol li a{
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 2em;
+    transition: 0.5s;
+    background-color: transparent;
+}
+    
+ol li:hover a{
+    font-size: 3em;
+    background-color: transparent;
+    filter: drop-shadow(0 0 20px var(--clr)) 
+    drop-shadow(0 0 40px var(--clr))
+    drop-shadow(0 0 60px var(--clr));
+    
+}
+
+.logofooter{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Acerca de mi */
+.div1{
+    margin-top: 35px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.div1 .div2{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.8);
+}
+
+.div1 .div2 img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid rgb(4, 2, 2);
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+.div1 .div2 > .contenido-texto{
+    width: 60%;
+    color: #fff;
+}
+
+.div1 .div2 > .contenido-texto p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.div1 .div2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div1 .div2:first-child{
+    margin-bottom: 30px;
+}
+.imagenacercademi{
+    margin: 10px;
+}
+
+textarea {
+    overflow: scroll;
+}
+.formulario {
+    margin: auto;
+}
+
+@media screen and (max-width:500px) {
+    .formulario {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .formulario {
+        width: 50%;
+    }
+}
