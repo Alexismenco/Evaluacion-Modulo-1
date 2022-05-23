@@ -212,3 +212,7 @@ textarea {
 .card-img-top{
     border-radius: 20px;
 }
+.bienvenido {
+    text-shadow: 2px 2px 2px black;
+    
+}
