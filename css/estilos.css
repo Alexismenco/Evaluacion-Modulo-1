@@ -178,6 +178,11 @@ ol li:hover a{
     align-items: center;
 }
 
+.card {
+    width: 17rem; 
+    border-radius: 20px;
+}
+
 .div1 .div2:first-child{
     margin-bottom: 30px;
 }
@@ -202,4 +207,8 @@ textarea {
     .formulario {
         width: 50%;
     }
+}
+
+.card-img-top{
+    border-radius: 20px;
 }
